@@ -8,14 +8,14 @@ public class MyReentrantLock implements Lock, AutoCloseable{
     @Override
     public void acquire() {
         while(!locked.compareAndSet(false, true)){
-            try{
-                this.wait();
+            try {
+                Thread.sleep(10);
             }
             catch (InterruptedException e){
                 Thread.currentThread().interrupt();
             }
         }
-        currentThread = Thread.currentThread();
+        this.currentThread = Thread.currentThread();
     }
 
     @Override
@@ -30,11 +30,43 @@ public class MyReentrantLock implements Lock, AutoCloseable{
         boolean status = locked.compareAndSet(true, false);
         if(!status)
             throw new IllegalReleaseAttempt();
-        this.notifyAll();
     }
 
     @Override
     public void close() {
         release();
     }
+
+//    @Override
+//    public void acquire() {
+//        while(!locked.compareAndSet(false, true)){
+//            try{
+//                this.wait();
+//            }
+//            catch (InterruptedException e){
+//                Thread.currentThread().interrupt();
+//            }
+//        }
+//        currentThread = Thread.currentThread();
+//    }
+//
+//    @Override
+//    public boolean tryAcquire() {
+//        return locked.compareAndSet(false, true);
+//    }
+//
+//    @Override
+//    public void release() {
+//        if(!Thread.currentThread().equals(currentThread))
+//            throw new IllegalReleaseAttempt();
+//        boolean status = locked.compareAndSet(true, false);
+//        if(!status)
+//            throw new IllegalReleaseAttempt();
+//        this.notifyAll();
+//    }
+//
+//    @Override
+//    public void close() {
+//        release();
+//    }
 }

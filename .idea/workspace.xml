@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5758367a-75bf-47b1-94ea-e25d4e390bc0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IllegalReleaseAttempt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyReentrantLock.java" afterDir="false" />
+    <list default="true" id="5758367a-75bf-47b1-94ea-e25d4e390bc0" name="Changes" comment="finished part a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DateCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LevelMostOccurrences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LevelMostOccurrences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyReentrantLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyReentrantLock.java" afterDir="false" />
     </list>
     <list id="0acaba00-db51-44db-a0ad-9e62dddb84b4" name="Changes by lionh" comment="">
       <change beforePath="$PROJECT_DIR$/src/Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyReentrantLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyReentrantLock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/MyReentrantLock.java">
+      <ranges>
+        <range start1="10" end1="12" start2="10" end2="15" changelist="5758367a-75bf-47b1-94ea-e25d4e390bc0" />
+        <range start1="13" end1="16" start2="16" end2="16" changelist="5758367a-75bf-47b1-94ea-e25d4e390bc0" />
+        <range start1="17" end1="18" start2="17" end2="18" changelist="5758367a-75bf-47b1-94ea-e25d4e390bc0" />
+        <range start1="32" end1="33" start2="32" end2="32" changelist="5758367a-75bf-47b1-94ea-e25d4e390bc0" />
+        <range start1="37" end1="38" start2="36" end2="37" changelist="0acaba00-db51-44db-a0ad-9e62dddb84b4" />
+        <range start1="39" end1="39" start2="38" end2="71" changelist="5758367a-75bf-47b1-94ea-e25d4e390bc0" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,8 +79,17 @@
       <option name="presentableId" value="Default" />
       <updated>1655719775731</updated>
       <workItem from="1655719777032" duration="3107000" />
-      <workItem from="1655889655554" duration="14869000" />
+      <workItem from="1655889655554" duration="15497000" />
+      <workItem from="1656103870276" duration="2864000" />
     </task>
+    <task id="LOCAL-00001" summary="finished part a">
+      <created>1655908663821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655908663821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,5 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="finished part a" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished part a" />
   </component>
 </project>
