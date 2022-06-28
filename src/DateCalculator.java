@@ -1,4 +1,20 @@
 public class DateCalculator {
+    private static final int JANUARY = 1;
+    private static final int FEBRUARY = 2;
+    private static final int MARCH =3;
+    private static final int APRIL = 4;
+    private static final int MAY = 5;
+    private static final int JUNE = 6;
+    private static final int JULY = 7;
+    private static final int AUGUST = 8;
+    private static final int SEPTEMBER = 9;
+    private static final int OCTOBER = 10;
+    private static final int NOVEMBER = 11;
+    private static final int DECEMBER = 12;
+    private static final int DAYS_IN_MONTH1 = 31;
+    private static final int DAYS_IN_MONTH2 = 30;
+    private static final int DAYS_IN_FEBRUARY1 = 28;
+    private static final int DAYS_IN_FEBRUARY2 = 29;
     public static Date addToDate(Date date, int num) {
         if(num == 0)
             return date;
@@ -14,13 +30,13 @@ public class DateCalculator {
 
     private static int daysInMonth(int year, int month){
         switch(month){
-            case 1, 3, 5, 7, 8, 10, 12: return 31;
-            case 2:
+            case JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER, DECEMBER: return 31;
+            case FEBRUARY:
                 if(year%4 == 0 && year%100!=0 || year%400 == 0){
-                    return 29;
+                    return DAYS_IN_FEBRUARY2;
                 }
-                return 28;
-            case 4, 6, 9, 11: return 30;
+                return DAYS_IN_FEBRUARY1;
+            case APRIL, JUNE, SEPTEMBER, NOVEMBER: return 30;
         }
         return 0; // not supposed to happen
     }
@@ -46,8 +62,4 @@ public class DateCalculator {
         }
         return (-1)*currentDay;
     }
-}
-
-enum Months{
-    JANUARY, FEBUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
 }
